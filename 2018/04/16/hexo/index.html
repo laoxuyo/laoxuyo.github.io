@@ -88,7 +88,7 @@
 <meta property="og:description" content="hexo安装git、node、注册一个github账号 安装鼠标右键-Git Bash Here，全局安装hexo-cli 1npm install -g hexo-cli 查看版本号 1hexo -v 安装hexo 1npm install hexo --save 新建文件夹myBlog，在该文件夹下打开git bash here,执行 12hexo initnpm install 安装hexo">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://laoxuyo.github.io/2018/04/16/img/hexo.jpg">
-<meta property="og:updated_time" content="2018-10-09T13:24:39.934Z">
+<meta property="og:updated_time" content="2018-10-12T10:14:59.411Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
 <meta name="twitter:description" content="hexo安装git、node、注册一个github账号 安装鼠标右键-Git Bash Here，全局安装hexo-cli 1npm install -g hexo-cli 查看版本号 1hexo -v 安装hexo 1npm install hexo --save 新建文件夹myBlog，在该文件夹下打开git bash here,执行 12hexo initnpm install 安装hexo">
@@ -345,11 +345,6 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读次数
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-            </span>
-          
 
           
 
@@ -384,8 +379,8 @@
       
 
       
-        <h4 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h4><p>安装git、node、注册一个github账号</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>鼠标右键-Git Bash Here，全局安装hexo-cli</p>
+        <h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>安装git、node、注册一个github账号</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>鼠标右键-Git Bash Here，全局安装hexo-cli</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>查看版本号</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
@@ -398,29 +393,29 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server或hexo s//localhost:4000</span><br></pre></td></tr></table></figure>
 <p>如果端口被占用</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 3000</span><br></pre></td></tr></table></figure>
-<h4 id="创建GitHub-pages"><a href="#创建GitHub-pages" class="headerlink" title="创建GitHub pages"></a>创建GitHub pages</h4><h5 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h5><p>仓库名字填<code>{username}.github.io</code></p>
+<h3 id="创建GitHub-pages"><a href="#创建GitHub-pages" class="headerlink" title="创建GitHub pages"></a>创建GitHub pages</h3><h4 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h4><p>仓库名字填<code>{username}.github.io</code></p>
 <p>点击创建-settings-github pages-choose a theme，选择完毕后会提示Your site is published at <a href="https://xxx.github.io/。" target="_blank" rel="noopener">https://xxx.github.io/。</a><br>说明成功了。</p>
-<h4 id="配置SSH秘钥"><a href="#配置SSH秘钥" class="headerlink" title="配置SSH秘钥"></a>配置SSH秘钥</h4><p>可以实现本地代码与GitHub代码同步</p>
-<h5 id="检查是否存在ssh秘钥"><a href="#检查是否存在ssh秘钥" class="headerlink" title="检查是否存在ssh秘钥"></a>检查是否存在ssh秘钥</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/. ssh</span><br></pre></td></tr></table></figure>
+<h3 id="配置SSH秘钥"><a href="#配置SSH秘钥" class="headerlink" title="配置SSH秘钥"></a>配置SSH秘钥</h3><p>可以实现本地代码与GitHub代码同步</p>
+<h4 id="检查是否存在ssh秘钥"><a href="#检查是否存在ssh秘钥" class="headerlink" title="检查是否存在ssh秘钥"></a>检查是否存在ssh秘钥</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/. ssh</span><br></pre></td></tr></table></figure>
 <p>如果不存在，创建新密钥</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"你的邮箱地址"</span></span><br></pre></td></tr></table></figure>
 <p>直接按回车，最后输出以下信息</p>
 <blockquote>
 <p>Your identification has been saved in /c/Users/you/.ssh/id_rsa.Your public key<br>has been saved in /c/Users/you/.ssh/id_rsa.pub.The key fingerprint<br>is:01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db <a href="mailto:your_email@example.com" target="_blank" rel="noopener">your_email@example.com</a></p>
 </blockquote>
-<h5 id="复制公钥到GitHub中"><a href="#复制公钥到GitHub中" class="headerlink" title="复制公钥到GitHub中"></a>复制公钥到GitHub中</h5><p>详见<br><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="noopener">https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/</a></p>
+<h4 id="复制公钥到GitHub中"><a href="#复制公钥到GitHub中" class="headerlink" title="复制公钥到GitHub中"></a>复制公钥到GitHub中</h4><p>详见<br><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="noopener">https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clip &lt; ~/.ssh/id_rsa.pub//Mac上是 pbcopy &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>github仓库中-settings-deploy keys，title随便填，key中粘贴复制的key，把allow write access勾上，因为后面运行会提示错误</p>
-<h5 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <p>成功后输出Hi djlxs! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
-<h5 id="设置用户信息"><a href="#设置用户信息" class="headerlink" title="设置用户信息"></a>设置用户信息</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"用户名"</span></span><br><span class="line">git config --global user.email <span class="string">"邮箱"</span></span><br></pre></td></tr></table></figure>
-<h4 id="本地文件同步"><a href="#本地文件同步" class="headerlink" title="本地文件同步"></a>本地文件同步</h4><p>github上复制仓库的ssh地址($hexo d不用每次输入密码)，打开本地文件的_config.yml，修改里面的内容，注意冒号之后要有空格</p>
+<h4 id="设置用户信息"><a href="#设置用户信息" class="headerlink" title="设置用户信息"></a>设置用户信息</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"用户名"</span></span><br><span class="line">git config --global user.email <span class="string">"邮箱"</span></span><br></pre></td></tr></table></figure>
+<h3 id="本地文件同步"><a href="#本地文件同步" class="headerlink" title="本地文件同步"></a>本地文件同步</h3><p>github上复制仓库的ssh地址($hexo d不用每次输入密码)，打开本地文件的_config.yml，修改里面的内容，注意冒号之后要有空格</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"><span class="built_in">type</span>: git</span><br><span class="line">repository: git@github.com:xxx/xxx.github.io.git</span><br><span class="line">brandch: master</span><br></pre></td></tr></table></figure>
 <p>然后在命令窗口执行下面命令,安装相关部署插件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>安装完成后执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g     //生成静态文档 generate</span><br><span class="line">hexo d      // 发布到博客deploy</span><br></pre></td></tr></table></figure>
-<h4 id="安装过程中遇到的问题"><a href="#安装过程中遇到的问题" class="headerlink" title="安装过程中遇到的问题"></a>安装过程中遇到的问题</h4><h5 id="1"><a href="#1" class="headerlink" title="1"></a>1</h5><p>npm install hexo-deploy-git –save报错</p>
+<h3 id="安装过程中遇到的问题"><a href="#安装过程中遇到的问题" class="headerlink" title="安装过程中遇到的问题"></a>安装过程中遇到的问题</h3><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>npm install hexo-deploy-git –save报错</p>
 <blockquote>
 <p>npm ERR! code E404<br>npm ERR! 404 Not Found: hexo-deploy-git@latest</p>
 </blockquote>
@@ -429,11 +424,11 @@
 <p>Install fail! Error: EPERM: operation not permitted</p>
 </blockquote>
 <p>最后重装解决，不知道什么原因。</p>
-<h5 id="2"><a href="#2" class="headerlink" title="2"></a>2</h5><blockquote>
+<h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><blockquote>
 <p>The key you are authenticating with has been marked as read only</p>
 </blockquote>
 <p>原因是github仓库上添加key的时候没有勾选allow write access，没有读写权限</p>
-<h4 id="下面是一些配置"><a href="#下面是一些配置" class="headerlink" title="下面是一些配置"></a>下面是一些配置</h4><h4 id="添加主题"><a href="#添加主题" class="headerlink" title="添加主题"></a>添加主题</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<h3 id="下面是一些配置"><a href="#下面是一些配置" class="headerlink" title="下面是一些配置"></a>下面是一些配置</h3><h4 id="添加主题"><a href="#添加主题" class="headerlink" title="添加主题"></a>添加主题</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <p>在站点配置文件_config.yml中将theme字段改为next</p>
 <p>在themes文件夹中的next文件中也有_config.yml，修改里面的scheme字段可以改变主题样式</p>
 <h4 id="next主题添加动态背景"><a href="#next主题添加动态背景" class="headerlink" title="next主题添加动态背景"></a>next主题添加动态背景</h4><p>在主题配置文件中找到canvas_nest: false，把它改为canvas_nest: true</p>
@@ -642,7 +637,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo"><span class="nav-number">1.</span> <span class="nav-text">hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建GitHub-pages"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub pages</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#新建仓库"><span class="nav-number">3.1.</span> <span class="nav-text">新建仓库</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH秘钥"><span class="nav-number">4.</span> <span class="nav-text">配置SSH秘钥</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#检查是否存在ssh秘钥"><span class="nav-number">4.1.</span> <span class="nav-text">检查是否存在ssh秘钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#复制公钥到GitHub中"><span class="nav-number">4.2.</span> <span class="nav-text">复制公钥到GitHub中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试"><span class="nav-number">4.3.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#设置用户信息"><span class="nav-number">4.4.</span> <span class="nav-text">设置用户信息</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地文件同步"><span class="nav-number">5.</span> <span class="nav-text">本地文件同步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装过程中遇到的问题"><span class="nav-number">6.</span> <span class="nav-text">安装过程中遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1"><span class="nav-number">6.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2"><span class="nav-number">6.2.</span> <span class="nav-text">2</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下面是一些配置"><span class="nav-number">7.</span> <span class="nav-text">下面是一些配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加主题"><span class="nav-number">8.</span> <span class="nav-text">添加主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#next主题添加动态背景"><span class="nav-number">9.</span> <span class="nav-text">next主题添加动态背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布文章"><span class="nav-number">10.</span> <span class="nav-text">发布文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何设置首页是列表预览模式"><span class="nav-number">11.</span> <span class="nav-text">如何设置首页是列表预览模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分类、标签页面"><span class="nav-number">12.</span> <span class="nav-text">创建分类、标签页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置网站logo"><span class="nav-number">13.</span> <span class="nav-text">设置网站logo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加访问量"><span class="nav-number">14.</span> <span class="nav-text">添加访问量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置右侧菜单默认显示"><span class="nav-number">15.</span> <span class="nav-text">设置右侧菜单默认显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在右上角或者左上角实现fork-me-on-github"><span class="nav-number">16.</span> <span class="nav-text">在右上角或者左上角实现fork me on github</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加音乐"><span class="nav-number">17.</span> <span class="nav-text">添加音乐</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo"><span class="nav-number">1.</span> <span class="nav-text">hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建GitHub-pages"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub pages</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建仓库"><span class="nav-number">3.1.</span> <span class="nav-text">新建仓库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH秘钥"><span class="nav-number">4.</span> <span class="nav-text">配置SSH秘钥</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#检查是否存在ssh秘钥"><span class="nav-number">4.1.</span> <span class="nav-text">检查是否存在ssh秘钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制公钥到GitHub中"><span class="nav-number">4.2.</span> <span class="nav-text">复制公钥到GitHub中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试"><span class="nav-number">4.3.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置用户信息"><span class="nav-number">4.4.</span> <span class="nav-text">设置用户信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地文件同步"><span class="nav-number">5.</span> <span class="nav-text">本地文件同步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装过程中遇到的问题"><span class="nav-number">6.</span> <span class="nav-text">安装过程中遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1"><span class="nav-number">6.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2"><span class="nav-number">6.2.</span> <span class="nav-text">2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面是一些配置"><span class="nav-number">7.</span> <span class="nav-text">下面是一些配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加主题"><span class="nav-number">7.1.</span> <span class="nav-text">添加主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#next主题添加动态背景"><span class="nav-number">7.2.</span> <span class="nav-text">next主题添加动态背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布文章"><span class="nav-number">7.3.</span> <span class="nav-text">发布文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何设置首页是列表预览模式"><span class="nav-number">7.4.</span> <span class="nav-text">如何设置首页是列表预览模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分类、标签页面"><span class="nav-number">7.5.</span> <span class="nav-text">创建分类、标签页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置网站logo"><span class="nav-number">7.6.</span> <span class="nav-text">设置网站logo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加访问量"><span class="nav-number">7.7.</span> <span class="nav-text">添加访问量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置右侧菜单默认显示"><span class="nav-number">7.8.</span> <span class="nav-text">设置右侧菜单默认显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在右上角或者左上角实现fork-me-on-github"><span class="nav-number">7.9.</span> <span class="nav-text">在右上角或者左上角实现fork me on github</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加音乐"><span class="nav-number">7.10.</span> <span class="nav-text">添加音乐</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -685,26 +680,6 @@
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
-    </span>
-  
-</div>
-
 
 
 

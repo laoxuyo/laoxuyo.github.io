@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>https://laoxuyo.github.io/2018/04/16/hexo/</loc>
+    <lastmod>2018-10-12T10:14:59.411Z</lastmod>
+    <data>
+        <display>
+        <title>hexo+github搭建个人博客</title>
+        <pubTime>2018-04-16T06:30:30.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="other" url="https://laoxuyo.github.io/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://laoxuyo.github.io/2018/10/05/reactMultiple/</loc>
-    <lastmod>2018-10-09T13:31:08.557Z</lastmod>
+    <lastmod>2018-10-12T03:12:10.966Z</lastmod>
     <data>
         <display>
         <title>react配置多页面应用</title>
@@ -43,26 +63,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://laoxuyo.github.io/2018/04/16/hexo/</loc>
-    <lastmod>2018-10-09T13:24:39.934Z</lastmod>
-    <data>
-        <display>
-        <title>hexo+github搭建个人博客</title>
-        <pubTime>2018-04-16T06:30:30.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="other" url="https://laoxuyo.github.io/categories/other/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://laoxuyo.github.io/2018/09/18/event/</loc>
@@ -105,7 +105,6 @@
     </url>
 
     
-    
   <url>
     <loc>https://laoxuyo.github.io/2018/09/04/lazyLoad/</loc>
     <lastmod>2018-09-04T13:50:14.477Z</lastmod>
@@ -126,25 +125,6 @@
     </url>
 
     
-  <url>
-    <loc>https://laoxuyo.github.io/2018/09/02/Git/</loc>
-    <lastmod>2018-09-04T13:50:14.476Z</lastmod>
-    <data>
-        <display>
-        <title>Git</title>
-        <pubTime>2018-09-02T12:30:33.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="https://laoxuyo.github.io/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://laoxuyo.github.io/2018/07/16/Promise/</loc>
@@ -160,6 +140,26 @@
            
              
               <breadCrumb title="ES6" url="https://laoxuyo.github.io/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://laoxuyo.github.io/2018/09/02/Git/</loc>
+    <lastmod>2018-09-04T13:50:14.476Z</lastmod>
+    <data>
+        <display>
+        <title>Git</title>
+        <pubTime>2018-09-02T12:30:33.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="https://laoxuyo.github.io/categories/Git/"/>
           
         </display>
     </data>
