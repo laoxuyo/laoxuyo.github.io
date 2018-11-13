@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Git," />
+  <meta name="keywords" content="插件 JS," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1 建立分支以及提交PR1.1 建立新分支fork项目 git clone https://github.com/laoxuyo/rc-bmap.git 与自己的远程仓库建立连接 1git remote -v 与原仓库建立连接  1git remote add upstream https://github.com/jser-club/rc-bmap.git 查看关联的远程仓库的详细信息 1git">
-<meta name="keywords" content="Git">
+<meta name="description" content="安装引入12npm install papaparseimport Papa from &apos;papaparse&apos;; 解析成数组1234567Papa.parse(csvUrl, &amp;#123;  download: true,  //header: true, //如果要解析成对象数组加上这一句  complete: (results) =&amp;gt; &amp;#123;    let data = resul">
+<meta name="keywords" content="插件 JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git">
-<meta property="og:url" content="https://laoxuyo.github.io/2018/09/02/Git/index.html">
+<meta property="og:title" content="Papa Parse解析打包csv以及数组的一些操作">
+<meta property="og:url" content="https://laoxuyo.github.io/2018/11/13/papaparse/index.html">
 <meta property="og:site_name" content="老徐的博客">
-<meta property="og:description" content="1 建立分支以及提交PR1.1 建立新分支fork项目 git clone https://github.com/laoxuyo/rc-bmap.git 与自己的远程仓库建立连接 1git remote -v 与原仓库建立连接  1git remote add upstream https://github.com/jser-club/rc-bmap.git 查看关联的远程仓库的详细信息 1git">
+<meta property="og:description" content="安装引入12npm install papaparseimport Papa from &apos;papaparse&apos;; 解析成数组1234567Papa.parse(csvUrl, &amp;#123;  download: true,  //header: true, //如果要解析成对象数组加上这一句  complete: (results) =&amp;gt; &amp;#123;    let data = resul">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-04T13:50:14.476Z">
+<meta property="og:updated_time" content="2018-11-13T10:24:24.330Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git">
-<meta name="twitter:description" content="1 建立分支以及提交PR1.1 建立新分支fork项目 git clone https://github.com/laoxuyo/rc-bmap.git 与自己的远程仓库建立连接 1git remote -v 与原仓库建立连接  1git remote add upstream https://github.com/jser-club/rc-bmap.git 查看关联的远程仓库的详细信息 1git">
+<meta name="twitter:title" content="Papa Parse解析打包csv以及数组的一些操作">
+<meta name="twitter:description" content="安装引入12npm install papaparseimport Papa from &apos;papaparse&apos;; 解析成数组1234567Papa.parse(csvUrl, &amp;#123;  download: true,  //header: true, //如果要解析成对象数组加上这一句  complete: (results) =&amp;gt; &amp;#123;    let data = resul">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://laoxuyo.github.io/2018/09/02/Git/"/>
+  <link rel="canonical" href="https://laoxuyo.github.io/2018/11/13/papaparse/"/>
 
 
 
 
 
-  <title>Git | 老徐的博客</title>
+  <title>Papa Parse解析打包csv以及数组的一些操作 | 老徐的博客</title>
   
 
 
@@ -272,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://laoxuyo.github.io/2018/09/02/Git/">
+    <link itemprop="mainEntityOfPage" href="https://laoxuyo.github.io/2018/11/13/papaparse/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="老徐">
@@ -289,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git</h1>
+          <h1 class="post-title" itemprop="name headline">Papa Parse解析打包csv以及数组的一些操作</h1>
         
 
         <div class="post-meta">
@@ -301,8 +301,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-02T20:30:33+08:00">
-                2018-09-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-13T10:07:00+08:00">
+                2018-11-13
               </time>
             
 
@@ -324,8 +324,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
+                  <a href="/categories/插件/" itemprop="url" rel="index">
+                    <span itemprop="name">插件</span>
                   </a>
                 </span>
 
@@ -361,55 +361,20 @@
       
 
       
-        <h3 id="1-建立分支以及提交PR"><a href="#1-建立分支以及提交PR" class="headerlink" title="1 建立分支以及提交PR"></a>1 建立分支以及提交PR</h3><h4 id="1-1-建立新分支"><a href="#1-1-建立新分支" class="headerlink" title="1.1 建立新分支"></a>1.1 建立新分支</h4><p><code>fork</code>项目</p>
-<p>git clone <a href="https://github.com/laoxuyo/rc-bmap.git" target="_blank" rel="noopener">https://github.com/laoxuyo/rc-bmap.git</a></p>
-<p>与自己的远程仓库建立连接</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-<p>与原仓库建立连接 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https://github.com/jser-club/rc-bmap.git</span><br></pre></td></tr></table></figure>
-<p>查看关联的远程仓库的详细信息</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-<p>创建新分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b 分支名</span><br></pre></td></tr></table></figure>
-<p>提交代码到分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add 文件  或者  git add .</span><br><span class="line">git commit -m <span class="string">'提交内容'</span></span><br><span class="line">git push origin 分支名</span><br></pre></td></tr></table></figure>
-<h4 id="1-2-提交PR"><a href="#1-2-提交PR" class="headerlink" title="1.2 提交PR"></a>1.2 提交PR</h4><p>打开自己仓库，点击New pull request，compare选择自己的分支，然后点击Create pull request</p>
-<h4 id="1-3-其他"><a href="#1-3-其他" class="headerlink" title="1.3 其他"></a>1.3 其他</h4><p>拉取分支代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin 分支名</span><br></pre></td></tr></table></figure>
-<p>在新分支修改代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git checkout v0.1.2</span><br><span class="line">git pull</span><br><span class="line">git checkout -b 你新建的分支</span><br></pre></td></tr></table></figure>
-<h3 id="2-git删除本地及远程分支"><a href="#2-git删除本地及远程分支" class="headerlink" title="2 git删除本地及远程分支"></a>2 git删除本地及远程分支</h3><p>查看所有分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure>
-<p>删除本地分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d &lt;BranchName&gt;</span><br></pre></td></tr></table></figure>
-<p>报错the branch is not fully merged</p>
-<p>按照报错信息，使用</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -D &lt;BranchName&gt;</span><br></pre></td></tr></table></figure>
-<p>删除远程分支 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete &lt;BranchName&gt;</span><br></pre></td></tr></table></figure>
-<p>成功后在另一台电脑中发现远程的分支还存在，但是是无效的。导致无法删除远程分支。</p>
-<p>查看远程分支是否有效</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote show origin</span><br></pre></td></tr></table></figure>
-<p>tracked表示远程分支还存在，stale表示远程分支不存在。可以看到stale后面有提示如何删除不存在的分支：use ‘git remote prune’ to remove</p>
-<p>执行下面命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote prune origin</span><br></pre></td></tr></table></figure>
-<h3 id="3-fork项目同步原项目"><a href="#3-fork项目同步原项目" class="headerlink" title="3 fork项目同步原项目"></a>3 fork项目同步原项目</h3><h4 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h4><ul>
-<li>点击New pull Request</li>
-<li>切换base fork和head fork</li>
-<li>点击Create pull request</li>
-<li>点击Merge pull request 合并从源fork来的代码。</li>
-</ul>
-<h4 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git remote -v </span><br><span class="line">git remote add upstream git@github.com:xxx/xxx.git</span><br><span class="line">git fetch upstream</span><br><span class="line">git merge upstream/master</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<p>git修改仓库链接及原仓库链接</p>
-<p>先删除再重新添加链接</p>
-<p>删除自己仓库链接</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
-<p>然后</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin 链接</span><br></pre></td></tr></table></figure>
-<p>删除原仓库链接</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote remove upstream</span><br></pre></td></tr></table></figure>
-<p>然后</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https://github.com/jser-club/rc-bmap.git</span><br></pre></td></tr></table></figure>
+        <h3 id="安装引入"><a href="#安装引入" class="headerlink" title="安装引入"></a>安装引入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install papaparse</span><br><span class="line">import Papa from <span class="string">'papaparse'</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="解析成数组"><a href="#解析成数组" class="headerlink" title="解析成数组"></a>解析成数组</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Papa.parse(csvUrl, &#123;</span><br><span class="line">  download: <span class="literal">true</span>,</span><br><span class="line">  <span class="comment">//header: true, //如果要解析成对象数组加上这一句</span></span><br><span class="line">  complete: <span class="function">(<span class="params">results</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> data = results.data;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>csvUrl是文件地址。</p>
+<h3 id="对解析后的数据进行处理"><a href="#对解析后的数据进行处理" class="headerlink" title="对解析后的数据进行处理"></a>对解析后的数据进行处理</h3><p>最近项目中遇到的问题，解析出来的二维数组比较特殊，每一项数组的长度都不一样，但是要按照以下方式显示在表格中：前10项固定，从第11项开始，每4项一组。</p>
+<blockquote>
+<p>比如：[[01,02,03,04,05,06], [11,12,13,14]]，假设这里只要前两项固定，第三项开始每两项一组，最后数据要变成[{A:01,B:02,C:[{C1:03,C2:04},{C1:05,C2:06}]}, {A:11,B:12,C:[{C1:13,C2:14}]}]</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> keys = [<span class="string">'date'</span>, <span class="string">'name'</span>, <span class="string">'bigNO'</span>, <span class="string">'bigName'</span>, <span class="string">'dealerNO'</span>, <span class="string">'dealerName'</span>, <span class="string">'chainNO'</span>, <span class="string">'chainName'</span>, <span class="string">'storeNO'</span>, <span class="string">'storeName'</span>]</span><br><span class="line">data.shift(); <span class="comment">// 解析出来的第一项数组是表头，去掉表头</span></span><br><span class="line"><span class="keyword">let</span> arr = [];</span><br><span class="line"><span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; data.length; i++) &#123;</span><br><span class="line">  obj = &#123;<span class="attr">other</span>: []&#125;;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; data[i].length; j++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (j &lt;= <span class="number">9</span>) &#123;</span><br><span class="line">      obj[<span class="keyword">this</span>.keys[j]] = data[i][j];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (j &gt; <span class="number">9</span> &amp;&amp; (j - <span class="number">9</span>) % <span class="number">4</span> === <span class="number">1</span>) &#123;</span><br><span class="line">      obj.other.push(&#123;</span><br><span class="line">        project: data[i][j],</span><br><span class="line">        picture: data[i][j + <span class="number">1</span>],</span><br><span class="line">        time: data[i][j + <span class="number">2</span>],</span><br><span class="line">        address: data[i][j + <span class="number">3</span>]&#125;</span><br><span class="line">      );</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  arr.push(obj);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(arr);</span><br></pre></td></tr></table></figure>
+<p>一开始我用的是obj.other = []，发现所有的数据都是最后一条记录。原因是obj.other这种写法，obj的指向的地址没变，还是指向那个堆，下次循环的时候改了obj，之前push进去的数据也被修改了。而obj={other:[]}重置了obj，指向的地址变了。</p>
+<h3 id="打包成csv并下载"><a href="#打包成csv并下载" class="headerlink" title="打包成csv并下载"></a>打包成csv并下载</h3><p>IE、Safari、Opera都不支持a标签的download属性<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> csv = Papa.unparse(data);</span><br><span class="line"><span class="keyword">const</span> blob = <span class="keyword">new</span> Blob([<span class="string">'\uFEFF'</span> + csv], &#123; <span class="attr">type</span>: <span class="string">'text/csv;charset=utf-8'</span> &#125;);</span><br><span class="line"><span class="keyword">const</span> fileName = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime();</span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">window</span>.navigator.msSaveOrOpenBlob) &#123; <span class="comment">// if browser is IE</span></span><br><span class="line">  navigator.msSaveBlob(blob, <span class="string">`<span class="subst">$&#123;fileName&#125;</span>.csv`</span>);<span class="comment">// filename文件名包括扩展名，下载路径为浏览器默认路径</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="keyword">var</span> link = <span class="built_in">document</span>.createElement(<span class="string">'a'</span>);</span><br><span class="line">  link.setAttribute(<span class="string">'href'</span>, URL.createObjectURL(blob));</span><br><span class="line">  link.setAttribute(<span class="string">'download'</span>, <span class="string">`<span class="subst">$&#123;fileName&#125;</span>.csv`</span>);</span><br><span class="line">  link.click();</span><br><span class="line">  URL.revokeObjectURL(link.href);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p>data可以是数组或对象，也可以是一个自定义fields和data的对象，例如<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> csv = Papa.unparse(&#123;</span><br><span class="line">	fields: [<span class="string">"Column 1"</span>, <span class="string">"Column 2"</span>],</span><br><span class="line">	data: [</span><br><span class="line">		[<span class="string">"foo"</span>, <span class="string">"bar"</span>],</span><br><span class="line">		[<span class="string">"abc"</span>, <span class="string">"def"</span>]</span><br><span class="line">	]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>期间遇到了文件数据乱码问题，后来加上{ type: ‘text/csv;charset=utf-8’}解决了。</p>
+<p><a href="https://www.papaparse.com/" target="_blank" rel="noopener">Papa Parse官方例子及文档地址</a></p>
+
       
     </div>
     
@@ -426,7 +391,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
+            <a href="/tags/插件-JS/" rel="tag"># 插件 JS</a>
           
         </div>
       
@@ -439,8 +404,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/07/this/" rel="next" title="YDKJS中的this">
-                <i class="fa fa-chevron-left"></i> YDKJS中的this
+              <a href="/2018/10/05/reactMultiple/" rel="next" title="react配置多页面应用">
+                <i class="fa fa-chevron-left"></i> react配置多页面应用
               </a>
             
           </div>
@@ -448,10 +413,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/04/lazyLoad/" rel="prev" title="图片懒加载">
-                图片懒加载 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -587,7 +548,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-建立分支以及提交PR"><span class="nav-number">1.</span> <span class="nav-text">1 建立分支以及提交PR</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-建立新分支"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 建立新分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-提交PR"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 提交PR</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-其他"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-git删除本地及远程分支"><span class="nav-number">2.</span> <span class="nav-text">2 git删除本地及远程分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-fork项目同步原项目"><span class="nav-number">3.</span> <span class="nav-text">3 fork项目同步原项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一"><span class="nav-number">3.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法二"><span class="nav-number">3.2.</span> <span class="nav-text">方法二</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装引入"><span class="nav-number">1.</span> <span class="nav-text">安装引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解析成数组"><span class="nav-number">2.</span> <span class="nav-text">解析成数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对解析后的数据进行处理"><span class="nav-number">3.</span> <span class="nav-text">对解析后的数据进行处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包成csv并下载"><span class="nav-number">4.</span> <span class="nav-text">打包成csv并下载</span></a></li></ol></div>
             
 
           </div>

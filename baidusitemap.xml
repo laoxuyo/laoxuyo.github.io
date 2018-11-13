@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://laoxuyo.github.io/2018/11/13/papaparse/</loc>
+    <lastmod>2018-11-13T10:24:24.330Z</lastmod>
+    <data>
+        <display>
+        <title>Papa Parse解析打包csv以及数组的一些操作</title>
+        <pubTime>2018-11-13T02:07:00.000Z</pubTime>
+        
+        <tag>插件 JS</tag>
+         
+         
+           
+             
+              <breadCrumb title="插件" url="https://laoxuyo.github.io/categories/%E6%8F%92%E4%BB%B6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://laoxuyo.github.io/2018/04/16/hexo/</loc>
     <lastmod>2018-10-12T10:14:59.411Z</lastmod>
     <data>
@@ -85,25 +105,6 @@
 
     
     
-  <url>
-    <loc>https://laoxuyo.github.io/2018/08/07/this/</loc>
-    <lastmod>2018-09-04T13:50:14.477Z</lastmod>
-    <data>
-        <display>
-        <title>YDKJS中的this</title>
-        <pubTime>2018-08-07T08:20:50.000Z</pubTime>
-        
-        <tag>JS</tag>
-         
-         
-           
-             
-              <breadCrumb title="JS" url="https://laoxuyo.github.io/categories/JS/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://laoxuyo.github.io/2018/09/04/lazyLoad/</loc>
@@ -125,21 +126,20 @@
     </url>
 
     
-    
   <url>
-    <loc>https://laoxuyo.github.io/2018/07/16/Promise/</loc>
-    <lastmod>2018-09-04T13:50:14.476Z</lastmod>
+    <loc>https://laoxuyo.github.io/2018/08/07/this/</loc>
+    <lastmod>2018-09-04T13:50:14.477Z</lastmod>
     <data>
         <display>
-        <title>Promise</title>
-        <pubTime>2018-07-16T02:40:50.000Z</pubTime>
+        <title>YDKJS中的this</title>
+        <pubTime>2018-08-07T08:20:50.000Z</pubTime>
         
-        <tag>ES6 JS</tag>
+        <tag>JS</tag>
          
          
            
              
-              <breadCrumb title="ES6" url="https://laoxuyo.github.io/categories/ES6/"/>
+              <breadCrumb title="JS" url="https://laoxuyo.github.io/categories/JS/"/>
           
         </display>
     </data>
@@ -160,6 +160,26 @@
            
              
               <breadCrumb title="Git" url="https://laoxuyo.github.io/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://laoxuyo.github.io/2018/07/16/Promise/</loc>
+    <lastmod>2018-09-04T13:50:14.476Z</lastmod>
+    <data>
+        <display>
+        <title>Promise</title>
+        <pubTime>2018-07-16T02:40:50.000Z</pubTime>
+        
+        <tag>ES6 JS</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="https://laoxuyo.github.io/categories/ES6/"/>
           
         </display>
     </data>
