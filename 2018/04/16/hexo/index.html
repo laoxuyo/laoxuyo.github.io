@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="老徐的博客">
 <meta property="og:description" content="hexo安装git、node、注册一个github账号 安装鼠标右键-Git Bash Here，全局安装hexo-cli 1npm install -g hexo-cli 查看版本号 1hexo -v 安装hexo 1npm install hexo --save 新建文件夹myBlog，在该文件夹下打开git bash here,执行 12hexo initnpm install 安装hexo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-05T05:30:09.237Z">
+<meta property="og:updated_time" content="2019-01-05T07:53:57.867Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
 <meta name="twitter:description" content="hexo安装git、node、注册一个github账号 安装鼠标右键-Git Bash Here，全局安装hexo-cli 1npm install -g hexo-cli 查看版本号 1hexo -v 安装hexo 1npm install hexo --save 新建文件夹myBlog，在该文件夹下打开git bash here,执行 12hexo initnpm install 安装hexo">
@@ -343,6 +343,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -435,6 +440,7 @@
 <h4 id="添加访问量"><a href="#添加访问量" class="headerlink" title="添加访问量"></a>添加访问量</h4><p>在主题的_config.yml文件里面</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  # count values only if the other configs are false</span><br><span class="line">  enable: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>在本地查看发现访问量异常地大，这是正常现象，因为使用不蒜子统计的用户都使用同一个存储空间，如果你的URL和别人重复，就会出现数据量异常。这样的情况一般出现在你使用localhost:4000访问自己在本地部署的网页的时候。</p>
+<p>遇到不蒜子无法统计问题，原因是<a href="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js无法访问，在/theme/next/layout/_third-party/analytics/busuanzi-counter.swig文件中修改地址即可" target="_blank" rel="noopener">https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js无法访问，在/theme/next/layout/_third-party/analytics/busuanzi-counter.swig文件中修改地址即可</a></p>
 <h4 id="设置右侧菜单默认显示"><a href="#设置右侧菜单默认显示" class="headerlink" title="设置右侧菜单默认显示"></a>设置右侧菜单默认显示</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sidebar:</span><br><span class="line">  display: always</span><br></pre></td></tr></table></figure>
 <h4 id="在右上角或者左上角实现fork-me-on-github"><a href="#在右上角或者左上角实现fork-me-on-github" class="headerlink" title="在右上角或者左上角实现fork me on github"></a>在右上角或者左上角实现fork me on github</h4><p>在<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这里</a>复制自己喜欢的样式的代码</p>
 <p>找到<code>themes/next/layout/_layout.swig</code>文件</p>
@@ -554,7 +560,7 @@
                 alt="老徐" />
             
               <p class="site-author-name" itemprop="name">老徐</p>
-              <p class="site-description motion-element" itemprop="description">这是描述</p>
+              <p class="site-description motion-element" itemprop="description">share is happiness</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -662,6 +668,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
