@@ -126,26 +126,6 @@
     
     
   <url>
-    <loc>https://laoxuyo.github.io/2018/08/07/this/</loc>
-    <lastmod>2018-09-04T13:50:14.477Z</lastmod>
-    <data>
-        <display>
-        <title>YDKJS中的this</title>
-        <pubTime>2018-08-07T08:20:50.000Z</pubTime>
-        
-        <tag>JS</tag>
-         
-         
-           
-             
-              <breadCrumb title="JS" url="https://laoxuyo.github.io/categories/JS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://laoxuyo.github.io/2018/09/04/lazyLoad/</loc>
     <lastmod>2018-09-04T13:50:14.477Z</lastmod>
     <data>
@@ -159,6 +139,26 @@
            
              
               <breadCrumb title="other" url="https://laoxuyo.github.io/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://laoxuyo.github.io/2018/08/07/this/</loc>
+    <lastmod>2018-09-04T13:50:14.477Z</lastmod>
+    <data>
+        <display>
+        <title>YDKJS中的this</title>
+        <pubTime>2018-08-07T08:20:50.000Z</pubTime>
+        
+        <tag>JS</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="https://laoxuyo.github.io/categories/JS/"/>
           
         </display>
     </data>
